@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(trajectory_planner_gui)
+project(macos_qt_app)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -21,7 +21,6 @@ if(APPLE AND EXISTS /usr/local/opt/qt)
 endif()
 
 find_package(Qt5Widgets REQUIRED)
-# find_package(Qt5OpenGL)
 set(QT_LIBRARIES Qt5::Widgets)
 
 # We need add -DQT_WIDGETS_LIB when using QtWidgets in Qt 5.
